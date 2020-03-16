@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>Test</title>
+</head>
+
+<body>
+    <div class="container background">
+        <section>
+            <h1>Chose a JSON file</h1>
+            <p>Either chose a premade JSON file, or chose the last option which lets you upload your own file.</p>
+            <form name="fileForm">
+                <label> <input type="radio" id="example1" name="file" value="Example1"> Example1 </label>
+                <label> <input type="radio" id="example2" name="file" value="Example2"> Example2 </label>
+                <label> <input type="radio" id="example3" name="file" value="Example3"> Example3 </label>
+                <label> <input type="radio" id="other" name="file" value="other"> Select File </label>
+                <input type="file" id="uploader" multiple size="50" onchange="handleFileSelect(event)">
+            </form>
+            <h1>Extra options</h1>
+            <form name="differentTasks">
+                <label>
+                    <input type="checkbox" id="samename" name="booleans" value="samename" onclick="checkIt(this)">
+                    There can be more than one individual with the same name
+                </label>
+                <label id="childparent">
+                    <input type="checkbox" name="booleans" value="childparent" onclick="checkIt(this)">
+                    Child can have same name as parent
+                </label>
+                <label id="firstperson">
+                    <input type="checkbox" name="booleans" value="firstperson" onclick="checkIt(this)">
+                    New child whose parents name has atleast 2 individuals will go to the first one called
+                </label>
+                <label>
+                    <input type="checkbox" name="booleans" value="errors" onclick="checkIt(this)">
+                    Print error messages above the output
+                </label>
+            </form>
+        </section>
+        <section id="readme">
+            <h1>README.md</h1>
+            <p>The user can either chose to use one of the 3 provided examples, or use his/her own example by chosing the 4th option in the "Chose a JSON file" section.</p>
+            <p>The user is then allowed to use the "Extra options" to change the output around. The extra options was done voluntarily. </p>
+        </section>
+
+        <section id="list">
+            <div></div>
+            <h1>Output</h1>
+            <div class="container">
+                <ul></ul>
+                <ul></ul>
+            </div>
+        </section>
+    </div>
+
+
+    <script src="assets/javascript/functions.js"></script>
+    <script src="assets/javascript/functionOriented.js"></script>
+</body>
+
+</html>
