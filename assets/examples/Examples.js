@@ -29,4 +29,17 @@ var examples = {
         "Shaun Ante",
         "Luky Ante"
     ],
+    Example4: [
+        "B A",
+        "C B",
+        "D C",
+        "E C",
+        "F B",
+        "E E",
+        "2 1",
+        "3 2",
+        "B 3",
+        "4 B",
+        "5 4"
+    ]
 }
