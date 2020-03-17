@@ -8,6 +8,7 @@ let errors = false
 let firstperson = false
 
 // Function that uses a function oriented approach for solving the task
+// I made a few different ways of solving it but i settled for this one because of its efficiency
 function functionOrientedApproach() {
     outputList.innerHTML = ""
     inputList.innerHTML = ""
